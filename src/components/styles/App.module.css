@@ -1,0 +1,12 @@
+.appContainer {
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #999;
+}

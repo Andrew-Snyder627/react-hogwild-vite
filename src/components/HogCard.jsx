@@ -39,7 +39,7 @@ function HogCard({ hog, onHide }) {
       </div>
 
       <div className={`extra content ${styles.buttonContainer}`}>
-        <button className="ui red button" onClick={{ handleHide }}>
+        <button className="ui red button" onClick={handleHide}>
           Hide Me
         </button>
       </div>

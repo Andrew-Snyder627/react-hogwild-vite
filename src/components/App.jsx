@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import HogForm from "./HogForm";
 import FilterSortBar from "./FilterSortBar";
 import HogList from "./HogList";
+import styles from "./styles/App.module.css";
 
 import hogsData from "../porkers_data";
 
@@ -40,7 +41,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={styles.appContainer}>
       <Nav />
       <FilterSortBar
         showGreasedOnly={showGreasedOnly}
@@ -50,7 +51,7 @@ function App() {
       />
       <HogForm onAdd={addHog} />
       <HogList hogs={displayHogs} onHide={hideHog} />
-      <footer className="footer subtleText">
+      <footer className={styles.footer}>
         2025 HogWild | All rights reserved.
       </footer>
     </div>
