@@ -105,3 +105,5 @@ function HogForm({ onAdd }) {
     </form>
   );
 }
+
+export default HogForm;
