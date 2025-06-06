@@ -1,0 +1,22 @@
+.filterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.filterSection,
+.sortSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filterLabel,
+.sortLabel {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
