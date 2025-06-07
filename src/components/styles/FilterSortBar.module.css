@@ -1,22 +1,43 @@
 .filterContainer {
+  background-color: #f9fafb;
+  border: none;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
 }
 
-.filterSection,
+.filterSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* add spacing between checkbox & label text */
+  margin-bottom: 0.5rem;
+}
+
+.filterLabel {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2563eb;
+}
+
 .sortSection {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem; /* adds space between 'Sort by:' and dropdown */
 }
 
-.filterLabel,
 .sortLabel {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2563eb;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
 }

@@ -10,7 +10,10 @@ function HogCard({ hog, onHide }) {
 
   return (
     <div aria-label="hog card" className={`ui card ${styles.cardWrapper}`}>
-      <div className={`image ${styles.imageWrapper}`}>
+      <div
+        className={`image ${styles.imageWrapper}`}
+        onClick={handleToggleDetails}
+      >
         <img src={hog.image} alt={`Photo of ${hog.name}`} />
       </div>
 
