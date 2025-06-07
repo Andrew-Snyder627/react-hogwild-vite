@@ -8,13 +8,16 @@ function HogCard({ hog, onHide }) {
   const handleToggleDetails = () => setShowDetails((prev) => !prev);
   const handleHide = () => onHide(hog.name);
 
+  // Placeholder image if a image is not provided
+  const placeholderImage = "https://placehold.co/300x200?text=No+Image";
+
   return (
     <div aria-label="hog card" className={`ui card ${styles.cardWrapper}`}>
       <div
         className={`image ${styles.imageWrapper}`}
         onClick={handleToggleDetails}
       >
-        <img src={hog.image} alt={`Photo of ${hog.name}`} />
+        <img src={hog.image || placeholderImage} alt={`Photo of ${hog.name}`} />
       </div>
 
       <div className={`content ${styles.content}`}>
